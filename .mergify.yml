@@ -1,7 +1,6 @@
 pull_request_rules:
   - name: Automatic merge
     conditions:
-      - status-success=Vercel
       - base=main
     actions:
       merge:

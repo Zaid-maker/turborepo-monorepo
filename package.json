@@ -15,7 +15,7 @@
     "turbo": "^1.10.16"
   },
   "name": "my-turborepo",
-  "packageManager": "npm@8.19.4",
+  "packageManager": "npm@10.2.5",
   "workspaces": [
     "apps/*",
     "packages/*"

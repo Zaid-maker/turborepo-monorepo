@@ -11,11 +11,11 @@
     "eslint": "^8.0.0",
     "eslint-config-custom": "*",
     "lerna": "^7.4.1",
-    "prettier": "^2.5.1",
+    "prettier": "^3.0.0",
     "turbo": "^1.10.16"
   },
   "name": "my-turborepo",
-  "packageManager": "npm@8.19.4",
+  "packageManager": "npm@10.2.5",
   "workspaces": [
     "apps/*",
     "packages/*"

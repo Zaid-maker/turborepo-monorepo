@@ -16,7 +16,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^v14.0.5-canary.45",
+    "@next/eslint-plugin-next": "^14.1.0",
     "@repo/eslint-config": "*",
     "@repo/tailwind-config": "*",
     "@repo/typescript-config": "*",

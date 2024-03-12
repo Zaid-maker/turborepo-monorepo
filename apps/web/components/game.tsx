@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Socket, io } from "socket.io-client";
 import { Button } from "./ui/button";
 import { LeaderboardCard } from "./leaderboard-card";
+import { toast } from "sonner";
 
 export default function GamePlayer({ gameId, name }: GameProps) {
   const [ioInstance, setIoInstance] = useState<Socket>();
@@ -90,7 +91,7 @@ export default function GamePlayer({ gameId, name }: GameProps) {
     });
 
     ioInstance.on("error", (message: string) => {
-      // toast.error(message);
+      toast.error(message);
     });
   }
 

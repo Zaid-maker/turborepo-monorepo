@@ -49,5 +49,5 @@ export default function GameJoin({
       </main>
     );
 
-  return <GamePlayer />;
+  return <GamePlayer name={searchParams.name} gameId={params.gameId} />;
 }

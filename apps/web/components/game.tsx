@@ -109,6 +109,12 @@ export default function GamePlayer({ gameId, name }: GameProps) {
     ioInstance.off("error");
   }
 
+  function startGame() {
+    if (!ioInstance) return;
+
+    ioInstance.emit("start-game");
+  }
+
   return (
     <div className="w-screen p-10 grid grid-cols-1 lg:grid-cols-3 gap-20">
       <div className="w-full order-last lg:order-first">
@@ -136,7 +142,21 @@ export default function GamePlayer({ gameId, name }: GameProps) {
             </h1>
 
             {host === ioInstance?.id && (
-              <Button className="mt-10 px-20">Start Game</Button>
+              <Button className="mt-10 px-20" onClick={startGame}>
+                Start Game
+              </Button>
+            )}
+          </div>
+        )}
+
+        {gameStatus === "in-progress" && (
+          <div className="flex flex-col items-center justify-center p-10">
+            <h1 className="text-2xl font-bold">Type the paragraph below...</h1>
+
+            {host === ioInstance?.id && (
+              <Button className="mt-10 px-20" onClick={startGame}>
+                Start Game
+              </Button>
             )}
           </div>
         )}

@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dependency Review
-        uses: actions/dependency-review-action@v4.2.5
+        uses: actions/dependency-review-action@V4.3.0
         with:
           comment-summary-in-pr: always
           

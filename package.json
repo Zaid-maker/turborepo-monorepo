@@ -11,7 +11,7 @@
   "devDependencies": {
     "@repo/typescript-config": "*",
     "eslint": "^9.18.0",
-    "lerna": "^8.0.2",
+    "lerna": "^9.0.3",
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.6.0",
     "turbo": "latest"
